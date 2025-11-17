@@ -1,12 +1,12 @@
 labels:
-  - name: "SYNC"
+  - name: "SYNC-MAIN-TO-DEV"
     color: "0366d6"
-    description: "Synchronize changes between branches"
+    description: "Sync changes from main to dev branch to keep environments aligned."
 
   - name: "HOTFIX"
     color: "ff6f00"
-    description: "Urgent fix required for production"
+    description: "Critical fix requiring immediate action and fast deployment to production."
 
   - name: "STAGING"
     color: "8f36b8"
-    description: "Related to staging testing or QA"
+    description: "Work assigned to the staging environment for testing and validation before production release."
