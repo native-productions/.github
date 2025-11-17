@@ -1,0 +1,12 @@
+labels:
+  - name: "SYNC"
+    color: "0366d6"
+    description: "Synchronize changes between branches"
+
+  - name: "HOTFIX"
+    color: "ff6f00"
+    description: "Urgent fix required for production"
+
+  - name: "STAGING"
+    color: "8f36b8"
+    description: "Related to staging testing or QA"
