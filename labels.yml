@@ -1,12 +1,11 @@
-labels:
-  - name: "SYNC-MAIN-TO-DEV"
-    color: "0366d6"
-    description: "Sync changes from main to dev branch to keep environments aligned."
+- name: "SYNC-MAIN-TO-DEV"
+  color: "0366d6"
+  description: "Sync changes from main to dev branch to keep environments aligned."
 
-  - name: "HOTFIX"
-    color: "ff6f00"
-    description: "Critical fix requiring immediate action and fast deployment to production."
+- name: "HOTFIX"
+  color: "ff6f00"
+  description: "Critical fix requiring immediate action and fast deployment to production."
 
-  - name: "STAGING"
-    color: "8f36b8"
-    description: "Work assigned to the staging environment for testing and validation before production release."
+- name: "STAGING"
+  color: "8f36b8"
+  description: "Work assigned to the staging environment for testing and validation before production release."
