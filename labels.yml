@@ -13,3 +13,7 @@
 - name: "BACKEND"
   color: "d73a4a"
   description: "Issues and tasks related to server-side development and infrastructure."
+
+- name: "FRONTEND"
+  color: "f9d0c4"
+  description: "Tasks and issues related to client-side development, including UI/UX."
