@@ -22,7 +22,7 @@ jobs:
       - name: Sync labels from org config
         uses: EndBug/label-sync@v2
         with:
-          config-file: https://raw.githubusercontent.com/native-productions/.github/main/.github/labels.yml
+          config-file: https://raw.githubusercontent.com/native-productions/.github/main/labels.yml
           delete-other-labels: false
           token: ${{ secrets.ORG_SYNC_TOKEN }}
 
