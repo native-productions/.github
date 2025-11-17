@@ -1,9 +1,6 @@
 name: Sync Labels
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "15 3 * * 1" # sync setiap Senin jam 03:15 GMT
   push:
     branches:
       - main
@@ -13,9 +10,17 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      repository-projects: write
+      contents: read
+
     steps:
       - name: Sync labels from org config
         uses: EndBug/label-sync@v2
         with:
           config-file: https://raw.githubusercontent.com/native-productions/.github/main/.github/labels.yml
-          delete-other-labels: false # tetap aman tidak hapus label custom repo
+          delete-other-labels: false
+          token: ${{ secrets.ORG_SYNC_TOKEN }}
+      - name: Done
+        run: echo "Labels synced successfully ✔️"
